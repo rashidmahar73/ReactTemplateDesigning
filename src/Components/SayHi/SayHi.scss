@@ -1,0 +1,393 @@
+$global-lightGreen-color: #14b789;
+$global-white-color: white;
+.SayHiContainerBackgroundColor{
+  background-color: #f9f9f9;
+}
+.SayHiStartingRow {
+  background-color: #f9f9f9;
+}
+.globalClassForThisGreenColor {
+  background-color: $global-lightGreen-color;
+}
+.removingPadding {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.removingPaddingSecondColumn {
+  padding-left: 0px;
+}
+.sayHiMainDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  margin-top: 100px;
+  .sayHiHeaderImage {
+    border-radius: 100px;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    margin: 10px 10px 10px 10px;
+  }
+  .sayHiHeading {
+    margin-left: 1rem !important;
+    color: $global-white-color;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.2;
+    letter-spacing: -3px;
+  }
+}
+.servicesSectionMainDiv {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 30px 30px;
+  border-right: 1px solid;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-color: #e9eaeb;
+  background-color: white;
+  .servicesSectionHeading {
+    font-size: 12px;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+  }
+  .servicesSectionButtons {
+    --bs-btn-bg: none;
+    color: #717275;
+    font-size: 14px;
+    font-weight: 500;
+    border-color: #e9eaeb;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 6px 14px;
+    &:hover {
+      background-color: #14b789;
+      color: white;
+    }
+  }
+  .descriptionServices {
+    color: #717275;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .stayConnectedSection {
+    .stayConnectedHeading {
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .iconsClassDiv {
+      border: 1px solid;
+      border-radius: 100% !important;
+      width: 40px;
+      height: 40px;
+      border-color: #e9eaeb;
+      .avatar-icon {
+        padding-left: 10px;
+        padding-top: 10px;
+      }
+      &:hover {
+        background-color: $global-lightGreen-color;
+        .avatar-icon {
+          color: white;
+        }
+      }
+    }
+  }
+}
+.AboutSecondMainDiv {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 30px 30px;
+  // border-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: white;
+  .AboutSecondMainDivHeading {
+    font-size: 12px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 33px;
+  }
+  .aboutSecondDescription {
+    color: #717275;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+.formEmailField {
+  margin-left: 20px;
+  width: 100%;
+  padding: 15px;
+}
+.form-check-inline {
+  vertical-align: middle;
+  width: 100%;
+  position: relative;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 24px;
+  border: 2px solid;
+  border-color: #e9eaeb;
+  border-radius: 6px;
+  padding: 0px;
+  // display: inline-block;
+  .formCheckbox {
+    display: flex;
+    .form-check-input {
+      width: 100%;
+      margin-top: 0px;
+      margin-left: 0px;
+      background-color: white;
+      border: 2px solid;
+      padding: 40px 50px;
+      border-radius: 0.25em;
+      &:focus {
+        border-color: $global-lightGreen-color;
+        box-shadow: 0 0 0 0rem #14b789 !important;
+      }
+    }
+    .form-check-label {
+      position: absolute;
+      .form-check-label-text {
+        padding-left: 20px;
+        color: #717275;
+      }
+      .form-check-label-last-text {
+        padding-left: 38px;
+        color: #717275;
+      }
+    }
+    .icon {
+      padding-left: 45px;
+      padding-top: 17px;
+      color: #14b789;
+    }
+  }
+  &:hover {
+    border: 2px solid;
+    border-color: #14b789;
+  }
+}
+.textAreaForm {
+  .textAreaHeight {
+    width: 100%;
+    height: 150px;
+    &:hover {
+      border-color: $global-lightGreen-color;
+    }
+    &:focus {
+      border-color: $global-lightGreen-color;
+      box-shadow: 0 0 0 0rem #14b789 !important;
+      &::placeholder {
+        font-size: 12px;
+        transform: translateY(-10%);
+        transition-duration: 0.3s;
+      }
+    }
+  }
+}
+.formBtnDiv {
+  display: flex;
+  justify-content: flex-end;
+  .formBtn {
+    background-color: $global-lightGreen-color;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    border-radius: 40px;
+    border: none;
+    &:hover {
+      background-color: #535da1;
+    }
+  }
+}
+.footer {
+  padding-top: 50px;
+  text-align: center;
+  padding-bottom: 50px;
+  .footerText {
+    font-size: 13px;
+    padding-left: 30px;
+  }
+}
+.formFloatingTextArea {
+  position: relative;
+  display: flex;
+  .formFloatingTextAreaInput {
+    color: #717275;
+    width: 90%;
+    height: 200px;
+    margin-left: 9%;
+    border: 2px solid;
+    line-height: 1.25;
+    font-size: 1rem;
+    font-weight: 400;
+    border-color: #e9eaeb;
+    &:hover {
+      border-color: $global-lightGreen-color;
+    }
+    &:focus {
+      border-color: $global-lightGreen-color;
+      box-shadow: 0 0 0 0rem #14b789 !important;
+      &::placeholder {
+        font-size: 12px;
+        transition-duration: 0.3s;
+      }
+    }
+  }
+}
+.formFloatingArea {
+  position: relative;
+  display: flex;
+// justify-content: center;
+margin-left: 9%;
+  .formFloatingAreaInput {
+    color: #717275;
+    width: 98%;
+    padding: 15px;
+    border: 2px solid;
+    line-height: 1.25;
+    font-size: 1rem;
+    font-weight: 400;
+    border-color: #e9eaeb;
+    &:hover {
+      border-color: $global-lightGreen-color;
+    }
+    &:focus {
+      border-color: $global-lightGreen-color;
+      box-shadow: 0 0 0 0rem #14b789 !important;
+      &::placeholder {
+        font-size: 12px;
+        // transform: translateY(-90%);
+        transition-duration: 0.3s;
+      }
+    }
+  }
+}
+.formFloatingNameAndEmail {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 7%;
+  .formInputField {
+    color: #717275;
+    width: 47%;
+    padding: 15px;
+    border: 2px solid;
+    line-height: 1.25;
+    font-size: 1rem;
+    font-weight: 400;
+    border-color: #e9eaeb;
+    &:hover {
+      border-color: $global-lightGreen-color;
+    }
+    &:focus {
+      border-color: $global-lightGreen-color;
+      box-shadow: 0 0 0 0rem #14b789 !important;
+      &::placeholder {
+        font-size: 12px;
+        transform: translateY(-90%);
+        transition-duration: 0.3s;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .servicesSectionMainDiv {
+    border: none;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 576px) {
+  .sayHiMainDiv {
+    .sayHiHeading {
+      font-size: 28px !important;
+      margin-left: 1.5rem;
+    }
+  }
+  .servicesSectionMainDiv {
+    .stayConnectedSection {
+      margin-bottom: 0px !important;
+      .IconsMainDivMediaQuery {
+        .forSpacing {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .formFloating {
+    .formInputField {
+      width: 170%;
+    }
+  }
+  .form-check-inline {
+    width: 100%;
+    .formCheckbox {
+      .form-check-label-text {
+        padding-left: 45px !important;
+      }
+      .form-check-label {
+        .icon {
+          padding-left: 70px;
+        }
+        .form-check-label-last-text {
+          padding-left: 65px;
+        }
+      }
+    }
+  }
+  .formCheckBoxMediaQuery {
+    max-width: 50%;
+  }
+  .AboutSecondMainDiv {
+    margin-top: -10px !important;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1282px) {
+  .formFloating {
+    .formInputField {
+      width: 107%;
+    }
+  }
+  .form-check-inline {
+    .formCheckbox {
+      // margin: 0px;
+      // padding: 0px;
+      .form-check-input {
+        padding-left: 35px;
+        padding-right: 53px;
+        padding-bottom: 30px;
+        padding-top: 50px;
+      }
+      .form-check-label {
+        .icon {
+          padding-left: 40px;
+        }
+        .form-check-label-text {
+          text-align: center;
+          font-size: 14px;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1282px) and (max-width: 1920px) {
+  .sayHiMainDiv {
+    margin-left: 150px;
+  }
+  .form-check-inline {
+    .formCheckbox {
+      .form-check-label {
+        margin-left: 10px;
+      }
+    }
+  }
+}

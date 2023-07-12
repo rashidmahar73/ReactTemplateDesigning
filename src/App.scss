@@ -1,0 +1,258 @@
+.light {
+  background-color: white;
+  color: black;
+  .experienceText {
+    color: black !important;
+  }
+  .experienceRowBackgroundColor {
+    // background-color: black;
+    .ExperiencesAndTable {
+      // color: white;
+      .table {
+        --bs-table-bg: white !important;
+        .tableHeading {
+          color: black;
+        }
+        .tableDataDetails {
+          color: black;
+        }
+      }
+    }
+  }
+  .ThemeButton {
+    width: 70px;
+    height: 70px;
+    color: white;
+    border-radius: 100%;
+    background-image: url(./Images/dark-mode-6682.png);
+    background-size: 60px;
+    background-repeat: no-repeat;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    z-index: 100;
+  }
+}
+.dark {
+  background-color: black;
+  .sticky-wrapper {
+    background-color: black;
+  }
+  .designingComponentContainer {
+    background-color: black;
+  }
+  .HeroContainer {
+    .HeroMainDiv {
+      .HeroHeading {
+        background-color: black;
+        color: white;
+      }
+    }
+    .HeroDescriptionDiv {
+      .HeroDescription {
+        background-color: black;
+      }
+    }
+    .heroSecondColumnImageDiv{
+      background-color: black;
+    }
+    .Hero-Btn{
+      background-color: #14b789;
+      border: 2px solid #14b789;
+      &:hover{
+      background-color: #535da1 !important;
+      border: 2px solid #535da1;
+      }
+    }
+  }
+  .carousel {
+    .carousel-control-prev-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+    }
+    .carousel-control-next-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+    }
+  }
+  .AboutMainContainer {
+    background-color: black;
+  }
+  .CompaniesMainContainer {
+    background-color: black;
+  }
+  .about-heading {
+    color: white;
+  }
+  .about-description-Text {
+    color: white;
+  }
+  .table {
+    --bs-table-bg: black !important;
+    .tableHeading {
+      color: white;
+    }
+    .tableDataDetails {
+      color: white;
+    }
+  }
+  .experienceRowBackgroundColor {
+    background-color: black;
+    .ExperiencesAndTable {
+      color: white;
+    }
+  }
+  .companiesHeading {
+    color: white;
+  }
+  // .carousel-inner {
+  .companies-image {
+    color: black;
+  }
+  // }
+
+  .servicesContainerColor {
+    background-color: black;
+    .servicesCard {
+      border: 2px solid;
+      background-color: black;
+      &:hover {
+        border-color: #14b789;
+      }
+      .services-icon-wrap {
+        background-color: black;
+        .icon {
+          color: white;
+        }
+
+        &:hover{
+        background-color: white;
+        .icon {
+          color: black;
+        }
+        }
+      }
+      .cardHeading {
+        color: white;
+      }
+      .cardDescriptionText {
+        color: white;
+      }
+      .Services-card-btn {
+        border: 2px black;
+      }
+    }
+  }
+  .ProjectSectionColor {
+    background-color: black;
+    .projectsCardMainDiv {
+      background-color: black;
+      .projectsContentDivs {
+        background-color: black !important;
+        .projectCardHeading {
+          color: white;
+        }
+        .projectCardSubHeading {
+          color: white;
+        }
+      }
+    }
+  }
+  .SayHiContainerBackgroundColor {
+    background-color: black;
+    .servicesSectionMainDiv {
+      background-color: black;
+      .servicesSectionHeading {
+        color: white;
+      }
+      .servicesSectionButtons {
+        color: white;
+        border: 2px solid black;
+        &:hover {
+          border-color: #14b789;
+        }
+      }
+      .stayConnectedSection {
+        color: white;
+        .descriptionServices {
+          color: white;
+        }
+        .iconsClassDiv {
+          border: 2px solid black;
+          &:hover {
+            border-color: #14b789;
+          }
+        }
+      }
+    }
+    .removingPaddingSecondColumn {
+      .AboutSecondMainDiv {
+        background-color: black;
+        .AboutSecondMainDivHeading {
+          color: white;
+        }
+        .aboutSecondDescription {
+          color: white;
+        }
+      }
+    }
+    .formFloatingNameAndEmail {
+      .formInputField {
+        background-color: black;
+        border: 2px solid white;
+        &:hover {
+          border-color: #14b789;
+        }
+        &::placeholder {
+          color: white;
+        }
+      }
+    }
+    .formFloatingArea {
+      .formFloatingAreaInput {
+        border: 2px solid white;
+        &:hover {
+          border-color: #14b789;
+        }
+        background-color: black;
+        &::placeholder {
+          color: white;
+        }
+      }
+    }
+    .formFloatingTextArea .formFloatingTextAreaInput {
+      background-color: black;
+      border: 2px solid white;
+      &:hover {
+        border-color: #14b789;
+      }
+      &::placeholder {
+        color: white;
+      }
+    }
+  }
+  .MapContainerColor {
+    background-color: black;
+  }
+  .ThemeButton {
+    width: 70px;
+    height: 70px;
+    // background-color: black;
+    color: white !important;
+    // background-color: white;
+    border-radius: 100%;
+    background-image: url(./Images/sun-3337.png);
+    background-size: 60px;
+    background-repeat: no-repeat;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    z-index: 100;
+  }
+}
