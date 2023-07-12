@@ -20,7 +20,7 @@ function App() {
   const selectOption = (option) => {
     setOption(option);
   };
-console.log("sa")
+console.log("sas")
   const doStuff = async () => {
     setLoading(true)
     let object = { ...option, prompt: input };
