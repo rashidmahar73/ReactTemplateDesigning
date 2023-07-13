@@ -4,6 +4,19 @@
   .experienceText {
     color: black !important;
   }
+  .formFloatingNameAndEmail {
+    .formInputField {
+      // background-color: black;
+      // border: 2px solid white;
+      // color:white;
+      // &:hover {
+      //   border-color: #14b789;
+      // }
+      &::placeholder {
+        color: black;
+      }
+    }
+  }
   .experienceRowBackgroundColor {
     // background-color: black;
     .ExperiencesAndTable {
@@ -35,6 +48,9 @@
     align-items: center;
     transition: 0.5s;
     z-index: 100;
+    &:hover{
+      cursor: pointer;
+    }
   }
 }
 .dark {
@@ -116,13 +132,17 @@
   .servicesContainerColor {
     background-color: black;
     .servicesCard {
-      border: 2px solid;
+      border: 2px solid white;
       background-color: black;
       &:hover {
         border-color: #14b789;
       }
       .services-icon-wrap {
         background-color: black;
+        border: 2px solid white;
+        &:hover{
+          border-color: #14b789;
+        }
         .icon {
           color: white;
         }
@@ -148,7 +168,11 @@
   .ProjectSectionColor {
     background-color: black;
     .projectsCardMainDiv {
+      border: 2px solid white;
       background-color: black;
+      &:hover{
+        border-color: #14b789;
+      }
       .projectsContentDivs {
         background-color: black !important;
         .projectCardHeading {
@@ -202,6 +226,7 @@
       .formInputField {
         background-color: black;
         border: 2px solid white;
+        color:white;
         &:hover {
           border-color: #14b789;
         }
@@ -213,6 +238,7 @@
     .formFloatingArea {
       .formFloatingAreaInput {
         border: 2px solid white;
+        color:white;
         &:hover {
           border-color: #14b789;
         }
@@ -225,6 +251,7 @@
     .formFloatingTextArea .formFloatingTextAreaInput {
       background-color: black;
       border: 2px solid white;
+      color:white;
       &:hover {
         border-color: #14b789;
       }
@@ -254,5 +281,8 @@
     align-items: center;
     transition: 0.5s;
     z-index: 100;
+    &:hover{
+      cursor: pointer;
+    }
   }
 }

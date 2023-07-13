@@ -13,18 +13,18 @@ export const Companies = () => {
     {
       src: "https://templatemo.com/templates/templatemo_578_first_portfolio/images/clients/cachet.svg",
     },
-    {
-      src: "https://templatemo.com/templates/templatemo_578_first_portfolio/images/clients/guitar-center.svg",
-    },
+    // {
+    //   src: "https://templatemo.com/templates/templatemo_578_first_portfolio/images/clients/guitar-center.svg",
+    // },
     {
       src: "https://templatemo.com/templates/templatemo_578_first_portfolio/images/clients/tokico.svg",
     },
     {
       src: "https://templatemo.com/templates/templatemo_578_first_portfolio/images/clients/shopify.svg",
     },
-    // {
-    //   src: "https://templatemo.com/templates/templatemo_578_first_portfolio/images/clients/profil-rejser.svg",
-    // },
+    {
+      src: "https://templatemo.com/templates/templatemo_578_first_portfolio/images/clients/profil-rejser.svg",
+    },
   ];
 
   const chunks = [];

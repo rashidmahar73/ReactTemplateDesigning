@@ -193,12 +193,12 @@ export const SayHi = () => {
         <Row className="SayHiContainerBackgroundColor">
           <div className="footer">
             <span className="footerText">
-              Copyright © 2036 First Portfolio Company. All rights reserved.
+              Copyright © 2023 First Portfolio Company. All rights reserved.
             </span>
             <span className="footerText">
               Design:{" "}
               <span>
-                <b>TemplateMo</b>
+                <b>Rashid Shahbaz</b>
               </span>
             </span>
           </div>
