@@ -1,0 +1,33 @@
+
+.experienceHeading {
+  font-size: 62px;
+  line-height: normal;
+  display: block;
+  font-weight: 700;
+}
+.exprienceDetail {
+  color: #14b789;
+  font-size: 18px;
+  font-weight: 400;
+}
+  .experienceText{
+   color: white;
+    text-align: center;
+  }
+
+@media only screen and (min-width: 375px) and (max-width: 576px) {
+  .ExperienceColFirstMediaQuery{
+    max-width: 50%;
+  }
+  .ExperienceColSecondMediaQuery{
+    max-width:50%;
+  }
+}
+@media only screen and (min-width: 1282px) and (max-width: 1920px) {
+  .ExperienceColFirstMediaQuery{
+    max-width: 40%;
+  }
+  .ExperienceColSecondMediaQuery{
+    max-width:40%;
+  }
+}

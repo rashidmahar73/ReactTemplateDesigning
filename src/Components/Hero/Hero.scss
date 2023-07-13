@@ -1,0 +1,250 @@
+$global-white-color: white;
+$global-lightGreen-color: #14b789;
+$global-blueMix-Color: #535da1;
+@mixin textAttributes($textAttributes: $global-white-color) {
+  background-color: $textAttributes;
+  border-radius: 40px;
+  font-size: 44px;
+
+  font-weight: bold;
+}
+.HeroContainer {
+  height: 100vh;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+.HeroMainDiv {
+  // padding-left: 80px;
+  margin-top: 85px;
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+  .heroMainFirstImage {
+    border-radius: 100px;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    margin: 10px 10px 10px 10px;
+  }
+  .HeroHeading {
+    letter-spacing: -3px;
+    padding: 8px 24px;
+
+    @include textAttributes;
+  }
+}
+.HeroDescriptionDiv {
+  padding-left: 120px;
+  display: flex;
+  justify-content: center;
+  // border-radius: 50px;
+  .HeroDescription {
+    // @include textAttributes;
+    font-size: 38px;
+    color: #14b789;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 100px;
+    padding: 8px 10px;
+    letter-spacing: -3px;
+    color: $global-lightGreen-color;
+  }
+}
+.HeroButtonDiv {
+  padding-left: 140px;
+  .Hero-Btn {
+    border-radius: 25px;
+    margin-top: 3%;
+    border-color: $global-blueMix-Color;
+    background-color: $global-blueMix-Color;
+    color: $global-white-color;
+    font-size: larger;
+    font-weight: 700;
+    &:hover {
+      background-color: $global-lightGreen-color !important;
+    }
+  }
+}
+.heroSecondColumnImageDiv {
+  background-color: white;
+  // border-radius: 100%;
+  margin-left: 100px;
+  // margin-top: 100px;
+  border-radius: 100% !important;
+  width: 400px;
+  height: 400px;
+  .heroSecondImage {
+    width: 100%;
+    min-width: 550px;
+    margin-top: 50px;
+    margin-left: -20px;
+    // object-fit: cover;
+  }
+}
+
+.globalClassForThisGreenColor {
+  background-color: $global-lightGreen-color;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 576px) {
+  .HeroMainDiv {
+    margin-top: 450px;
+    margin-left: -60px;
+    .HeroHeading {
+      padding: 10px;
+    }
+  }
+  .HeroDescriptionDiv {
+    margin-left: -100px;
+    width: 110%;
+    .HeroDescription {
+      padding-left: 50px;
+    }
+  }
+  .HeroButtonDiv {
+    // width: 100%;
+    margin-left: -100px;
+  }
+  .heroSecondColumnImageDiv {
+    width: 300px;
+    height: 300px;
+    margin-left: 10px;
+    margin-top: 10px;
+    .heroSecondImage {
+      // width: 300px;
+      // height: 300px;
+      width: 60%;
+      min-width: 450px;
+      margin-left: -30px;
+      margin-top: 10px;
+    }
+    // width:100px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  // .HeroForMediaQuery{
+  //   // height: 3000px;
+  //   margin-bottom: 1000px;
+  // }
+  .HeroMainDiv {
+    margin-top: 550px;
+    margin-left: -150px;
+  }
+  .HeroDescriptionDiv {
+    margin-left: -150px;
+  }
+  .HeroButtonDiv {
+    margin-left: -130px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .HeroMainDiv {
+    margin-top: 550px;
+    margin-left: -150px;
+  }
+  .HeroDescriptionDiv {
+    margin-left: -150px;
+  }
+  // .HeroButtonDiv{
+  //   // margin-left: -130px;
+  // }
+}
+@media only screen and (min-width: 992px) and (max-width: 1282px) {
+  .HeroMainDiv {
+    // margin-top: 300px;
+    margin-left: -150px;
+  }
+  .HeroDescriptionDiv {
+    margin-left: -150px;
+  }
+  .heroSecondColumnImageDiv {
+    // margin-top: 150px;
+    margin-left: 30px;
+    .heroSecondImage{
+      margin-left: -30px;
+    }
+  }
+  .HeroButtonDiv{
+    margin-left: -130px;
+  }
+}
+@media only screen and (min-width: 1282px) and (max-width: 1520px) {
+  // .HeroMainDiv {
+  //   // margin-top: 300px;
+  //   // margin-left: -150px;
+  // }
+  // .HeroDescriptionDiv {
+  //   // margin-left: -150px;
+  // }
+  // .heroSecondColumnImageDiv {
+  //   // margin-top: 150px;
+  //   // margin-left: 50px;
+  // }
+}
+@media only screen and (min-width: 1720px) and (max-width: 1920px) {
+  .Hero-Btn {
+    margin-left: 135px;
+    font-size: 18px;
+  }
+  .HeroMainDiv {
+    margin-top: -130px;
+    margin-left: 30px;
+    .HeroHeading {
+      font-size: 48px;
+    }
+  }
+  .HeroDescriptionDiv {
+    margin-left: 150px;
+    // padding: 10px;
+    .HeroDescription {
+      font-size: 48px;
+    }
+  }
+  .heroSecondColumnImageDiv {
+    width: 450px;
+    height: 450px;
+    margin-top: -280px;
+    margin-left: 200px;
+    .heroSecondImage {
+      margin-top: 50px;
+      margin-left: -20px;
+      width: 100%;
+      min-width: 650px;
+    }
+  }
+}
+@media only screen and (min-width: 1520px) and (max-width: 1720px) {
+  .Hero-Btn {
+    margin-left: -45px;
+    font-size: 18px;
+  }
+  .HeroMainDiv {
+    margin-top: -70px;
+    margin-left: -200px;
+    .HeroHeading {
+      font-size: 48px;
+    }
+  }
+  .HeroDescriptionDiv {
+    margin-left: -60px;
+    // padding: 10px;
+    .HeroDescription {
+      font-size: 48px;
+    }
+  }
+  .heroSecondColumnImageDiv {
+    width: 450px;
+    height: 450px;
+    margin-top: -150px;
+    margin-left: 150px;
+    .heroSecondImage {
+      margin-top: 50px;
+      margin-left: -20px;
+      width: 100%;
+      min-width: 650px;
+    }
+  }
+}
