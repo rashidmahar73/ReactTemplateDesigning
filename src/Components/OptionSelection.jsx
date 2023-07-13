@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function OptionSelection({ arrayItems, selectOption }) {
+function OptionSelection({ arrayItems, selectOption }) {
   return (
     <>
       <h1 className="heading">ChatGPT App</h1>
@@ -21,3 +21,4 @@ export default function OptionSelection({ arrayItems, selectOption }) {
     </>
   );
 }
+export default OptionSelection;
