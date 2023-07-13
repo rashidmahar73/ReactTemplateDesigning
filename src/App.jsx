@@ -1,6 +1,5 @@
 import "./App.css";
 import { Configuration, OpenAIApi } from "openai";
-// import OptionSelection from "./components/OptionSelection";
 import OptionSelection from "./components/OptionSelection";
 import Translation from "./components/Translation";
 import { arrayItems } from "./AIOptions";

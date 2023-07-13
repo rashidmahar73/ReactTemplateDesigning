@@ -3,7 +3,7 @@ import PropagateLoader from "react-spinners/PropagateLoader";
 const reload = () => {
   window.location.reload();
 }
-export default function Translation({ doStuff, setInput, result, loading }) {
+function Translation({ doStuff, setInput, result, loading }) {
   return (
     <div>
       <textarea
@@ -32,3 +32,4 @@ export default function Translation({ doStuff, setInput, result, loading }) {
     </div>
   );
 }
+export default Translation;
