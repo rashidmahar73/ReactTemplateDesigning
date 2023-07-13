@@ -1,0 +1,147 @@
+$global-white-color: white;
+$global-lightGreen-color: #14b789;
+$global-blueMix-Color: #535da1;
+@mixin textAttributes($textAttributes: $global-white-color) {
+  background-color: $textAttributes;
+  border-radius: 40px;
+  font-size: 200%;
+  font-weight: 700;
+  padding: 15px;
+}
+
+.HeroRowCss {
+  padding-bottom: 15%;
+  // background-color: green;
+}
+.HeroMainDiv {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  .secondDiv {
+    position: relative;
+    z-index: 1;
+    padding-top: 200px;
+    .avatar-image {
+      border-radius: 100px;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      margin: 10px 10px 10px 10px;
+    }
+    .text1 {
+      @include textAttributes;
+    }
+    .text2 {
+      @include textAttributes;
+      // width: 520px;
+      color: $global-lightGreen-color;
+    }
+  }
+  .imgDiv {
+    position: absolute;
+    .imgClass {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .secondImageDiv {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+    height: 40%;
+    margin-top: 10%;
+    border-radius: 100%;
+    background-color: white;
+    .secondImage {
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10%;
+    }
+  }
+}
+div {
+  .btn-2 {
+    border-radius: 25px;
+    border-color: $global-blueMix-Color;
+    background-color: $global-blueMix-Color;
+    color: $global-white-color;
+    font-size: larger;
+    font-weight: 700;
+    &:hover {
+      background-color: $global-lightGreen-color !important;
+    }
+  }
+}
+.globalClassForThisGreenColor {
+  background-color: $global-lightGreen-color;
+}
+
+// @media screen and  (min-width: 500px) and (max-width: 1013px) {
+//   .HeroMainDiv {
+//     width: 100%;
+//     .imgDiv {
+//       width: 100%;
+//     }
+//     .secondDiv {
+//       width: 100%;
+//       .text1 {
+//         background-color: white;
+//         border-radius: 40px;
+//         font-size: 200%;
+//         font-weight: 700;
+//         padding: 15px;
+//         // @include textAttributes;
+//       }
+//       .text2 {
+//         // @include textAttributes;
+//         width: 70%;
+//         background-color: white;
+//         border-radius: 40px;
+//         font-size: 200%;
+//         font-weight: 700;
+//         padding: 15px;
+//         color: $global-lightGreen-color;
+//       }
+//     }
+//   }
+//   .secondImageDiv {
+//     display: none;
+//     position: none;
+//     width: 10%;
+
+//     .secondImage {
+//       width: 100%;
+//     }
+//   }
+// }
+
+// @media screen and (min-width: 500px) and (max-width: 1013px) {
+//   .HeroMainDiv {
+//     width: 100%;
+//     .imgDiv {
+//       width: 100%;
+//     }
+//     .secondDiv {
+//       width: 100%;
+//       .text1 {
+//         @include textAttributes;
+//       }
+//       .text2 {
+//         @include textAttributes($global-lightGreen-color);
+//         width: 70%;
+//       }
+//     }
+//   }
+//   .secondImageDiv {
+//     display: none;
+//     position: static;
+//     width: 10%;
+
+//     .secondImage {
+//       width: 100%;
+//     }
+//   }
+// }

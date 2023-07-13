@@ -1,0 +1,84 @@
+@import "../Header/Header.scss";
+.companiesHeading {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+.carouselItem {
+  width: 500px;
+  height: 200px;
+}
+.carousel-control-next-icon {
+  color: none;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff000000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+  &:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(20, 183, 137)' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+  }
+}
+.carousel-control-prev-icon {
+  // background-color: black;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff000000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+  &:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(20, 183, 137)' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+
+  }
+}
+.companies-image {
+  position: absolute;
+  width: 500px;
+  height: 100px;
+  padding-left: 300px;
+  // &:hover {
+  //   transform: scale(1.3);
+  //   transition: transform 0.3s;
+  // }
+}
+.companiesMainDiv {
+  display: flex;
+  justify-content: space-around;
+}
+
+.companiesRow {
+  padding-top: 8%;
+  padding-bottom: 8%;
+}
+@media only screen and (min-width: 375px) and (max-width: 576px) {
+  .companies-image {
+    position: inherit;
+    width: 200px;
+    height: 100px;
+    padding: 0px !important;
+    margin-left: 90px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .companies-image {
+    margin-left: -230px;
+    margin-top: 50px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .companies-image {
+    margin-left: -180px;
+    margin-top: 40px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .companies-image {
+    margin-left: -140px;
+    margin-top: 40px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .companies-image {
+    margin-left: -70px;
+    margin-top: 40px;
+  }
+}
+@media only screen and (min-width: 1400px) and (max-width: 1920px) {
+  .companies-image {
+    margin-left: 10px;
+    margin-top: 40px;
+  }
+}
